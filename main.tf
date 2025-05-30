@@ -85,6 +85,6 @@ resource "azurerm_cosmosdb_sql_container" "main" {
   }
 }
 
-# Triggering Jenkins CI/CD test
+# Triggering Jenkins CI/CD 
 
 
