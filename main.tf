@@ -7,6 +7,8 @@ provider "azurerm" {
 resource "azurerm_resource_group" "main" {
   name     = "myResourceGroup"
   location = "West Europe"
+  
+
 }
 
 # 2. App Service Plan
@@ -60,6 +62,7 @@ resource "azurerm_cosmosdb_account" "main" {
 
   tags = {
     environment = "dev"
+    test = "Anandu "
   }
 }
 
@@ -83,4 +86,5 @@ resource "azurerm_cosmosdb_sql_container" "main" {
 }
 
 # Triggering Jenkins CI/CD test
+
 
