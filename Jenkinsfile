@@ -8,12 +8,12 @@ pipeline {
         ARM_TENANT_ID       = credentials('azure-tenant-id')
     }
 
-    stages {
-        stage('Clone Repo') {
-            steps {
-                git branch: 'main', url: 'https://github.com/anandukrishnakl/Mini-URL-Shortener.git'
-            }
-        }
+    stage('Clone Repo') {
+    steps {
+        git branch: 'main', url: 'https://github.com/anandukrishnakl/Mini-URL-Shortener.git'
+    }
+}
+
 
         stage('Terraform Init') {
             steps {
